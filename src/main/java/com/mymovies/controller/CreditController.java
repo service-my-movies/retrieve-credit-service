@@ -30,7 +30,7 @@ public class CreditController implements ICreditController {
 		try {
 			credits = creditService.getAPI_Credit(movie_id);
 		} catch (Exception e) {
-			LOGGER.error("Unexpected Error: getAPI_Credit: " + e);
+			LOGGER.error("Unexpected Error From Controller: getAPI_Credit: " + e);
 		}
 
 		return credits;
